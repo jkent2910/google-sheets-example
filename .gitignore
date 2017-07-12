@@ -22,3 +22,5 @@
 
 # Ignore .idea
 .idea/
+
+google_creds.json
