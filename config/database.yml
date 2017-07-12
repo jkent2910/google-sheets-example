@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  encoding: unicode
+  timeout: 5000
+
+development:
+  <<: *default
+  database: google-sheets-example_development
+
+test:
+  <<: *default
+  database: google-sheets-example_test
+
+production:
+  <<: *default
+  database: google-sheets-example_production
